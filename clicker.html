@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Click Counter</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="clicker.js"></script>
+<link rel="stylesheet" href='clicker.css'>
+</head>
+<body>
+<input id='title' type='text'></input><br><button onclick='clicker.createClicker()'>Create Clicker</button>
+</body>
+<script>
+$('#title').keypress(function (e) {
+  if (e.which == 13) {
+    clicker.createClicker();
+  }
+});
+  </script>
+</html>
